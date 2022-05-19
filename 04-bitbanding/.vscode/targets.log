@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri May 20 00:18:58 2022
+# Make data base, printed on Thu May 19 23:20:19 2022
 
 # Variables
 
@@ -50,12 +50,11 @@ VTE_VERSION = 6003
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/code
-# makefile (from 'Makefile', line 29)
-CFLAGS = -g -Wall -T$(LINKER_SCRIPT) -mlittle-endian -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -mfpu=fpv4-sp-d16 --specs=nosys.specs -Iinc -Icmsis/inc
+# makefile (from 'Makefile', line 27)
+CFLAGS = -g -Wall -T$(LINKER_SCRIPT) -mlittle-endian -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 --specs=nosys.specs -Iinc -Icmsis/inc
 # environment
 JOURNAL_STREAM = 8:52413
 # environment
- 
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
@@ -73,7 +72,7 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=1b06cb6f098c1cd217c0d07862867efb
 # environment
 VSCODE_VERBOSE_LOGGING = true
-# makefile (from 'Makefile', line 18)
+# makefile (from 'Makefile', line 16)
 AS = ${TRIPLE}-as
 # environment
 MANAGERPID = 1572
@@ -85,7 +84,7 @@ VSCODE_CWD = /home/rohit/sunbeam/my-files/arm/classwork/day12/02-interrupt
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
 NO_PROXY = 127.0.0.1
-# makefile (from 'Makefile', line 17)
+# makefile (from 'Makefile', line 15)
 LD = ${TRIPLE}-ld
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
@@ -165,7 +164,7 @@ MAKECMDGOALS := all
 PATH = /usr/local/cuda-11.7/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 SHLVL = 1
-# makefile (from 'Makefile', line 16)
+# makefile (from 'Makefile', line 14)
 CC = ${TRIPLE}-gcc
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
@@ -181,7 +180,7 @@ USER = rohit
 XDG_CURRENT_DESKTOP = Unity
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
-# makefile (from 'Makefile', line 12)
+# makefile (from 'Makefile', line 10)
 LINKER_SCRIPT = cmsis/src/STM32F401CCUX_FLASH.ld
 # default
 MAKE_COMMAND := make
@@ -215,13 +214,13 @@ MAKEFILES :=
 <F = $(notdir $<)
 # environment
 PLATFORMIO_CALLER = vscode
-# makefile (from 'Makefile', line 15)
+# makefile (from 'Makefile', line 13)
 TRIPLE = ~/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi
 # environment
 LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
-# makefile (from 'Makefile', line 19)
+# makefile (from 'Makefile', line 17)
 GDB = ${TRIPLE}-gdb
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
@@ -229,16 +228,14 @@ GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/ef203dda_b17a_4568_9d7a_88b796317529
 # automatic
 ^F = $(notdir $^)
-# makefile (from 'Makefile', line 20)
+# makefile (from 'Makefile', line 18)
 OBJCOPY = ${TRIPLE}-objcopy
-# makefile (from 'Makefile', line 28)
+# makefile (from 'Makefile', line 26)
 SRC_FILES = src/*.c cmsis/src/*.c cmsis/src/*.s
 # environment
 GNOME_TERMINAL_SERVICE = :1.112
 # default
 SUFFIXES := 
-# makefile (from 'Makefile', line 10)
-OPENOCD_BASE = ~/.platformio/packages/tool-openocd
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
@@ -260,7 +257,7 @@ VSCODE_PID = 2889
 # environment
 DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=1b06cb6f098c1cd217c0d07862867efb
 # variable set hash-table stats:
-# Load=124/1024=12%, Rehash=0, Collisions=21/170=12%
+# Load=123/1024=12%, Rehash=0, Collisions=21/169=12%
 
 # Pattern-specific Variable Values
 
@@ -268,11 +265,11 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=1b06cb6f098c1cd217c0d07
 
 # Directories
 
-# . (device 66316, inode 3540383): 10 files, no impossibilities.
-# src (device 66316, inode 3933671): 5 files, no impossibilities.
+# . (device 66316, inode 3540383): 8 files, no impossibilities.
+# src (device 66316, inode 3933671): 3 files, no impossibilities.
 # cmsis/src (device 66316, inode 3933674): 7 files, no impossibilities.
 
-# 22 files, no impossibilities in 3 directories.
+# 18 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
@@ -284,12 +281,13 @@ erase:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 41):
+#  recipe to execute (from 'Makefile', line 42):
 	openocd -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "init; reset halt; stm32f4x mass_erase 0; exit"
 
 # Not a target:
 cmsis/src/syscalls.c:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-05-19 17:33:32.16962
 #  File has been updated.
 #  Successfully updated.
@@ -303,7 +301,7 @@ all: interrupt.bin
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/7=0%
 
-interrupt.elf: src/main.c src/led.c src/switch.c cmsis/src/syscalls.c cmsis/src/sysmem.c cmsis/src/system_stm32f4xx.c cmsis/src/startup_stm32f401ccux.s
+interrupt.elf: src/main.c cmsis/src/syscalls.c cmsis/src/sysmem.c cmsis/src/system_stm32f4xx.c cmsis/src/startup_stm32f401ccux.s
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
 #  File does not exist.
@@ -316,19 +314,20 @@ interrupt.elf: src/main.c src/led.c src/switch.c cmsis/src/syscalls.c cmsis/src/
 # automatic
 # * := 
 # automatic
-# + := src/main.c src/led.c src/switch.c cmsis/src/syscalls.c cmsis/src/sysmem.c cmsis/src/system_stm32f4xx.c cmsis/src/startup_stm32f401ccux.s
+# + := src/main.c cmsis/src/syscalls.c cmsis/src/sysmem.c cmsis/src/system_stm32f4xx.c cmsis/src/startup_stm32f401ccux.s
 # automatic
 # | := 
 # automatic
 # < := src/main.c
 # automatic
-# ^ := src/main.c src/led.c src/switch.c cmsis/src/syscalls.c cmsis/src/sysmem.c cmsis/src/system_stm32f4xx.c cmsis/src/startup_stm32f401ccux.s
+# ^ := src/main.c cmsis/src/syscalls.c cmsis/src/sysmem.c cmsis/src/system_stm32f4xx.c cmsis/src/startup_stm32f401ccux.s
 # automatic
-# ? := src/main.c src/led.c src/switch.c cmsis/src/syscalls.c cmsis/src/sysmem.c cmsis/src/system_stm32f4xx.c cmsis/src/startup_stm32f401ccux.s
+# ? := src/main.c cmsis/src/syscalls.c cmsis/src/sysmem.c cmsis/src/system_stm32f4xx.c cmsis/src/startup_stm32f401ccux.s
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=2/17=12%
-#  recipe to execute (from 'Makefile', line 52):
+# Load=8/32=25%, Rehash=0, Collisions=2/18=11%
+#  recipe to execute (from 'Makefile', line 53):
 	$(CC) $(CFLAGS) -o build/$@ $^
+	echo $^
 
 # Not a target:
 .SUFFIXES:
@@ -339,22 +338,14 @@ interrupt.elf: src/main.c src/led.c src/switch.c cmsis/src/syscalls.c cmsis/src/
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-20 00:09:16.258579067
+#  Last modified 2022-05-19 23:19:14.545504193
 #  File has been updated.
 #  Successfully updated.
-
-# Not a target:
-src/switch.c:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-19 23:53:14.727135457
-#  File has been updated.
-#  Successfully updated.
- 
 
 # Not a target:
 src/main.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-19 23:54:33.39529381
+#  Last modified 2022-05-19 17:40:34.279029
 #  File has been updated.
 #  Successfully updated.
 
@@ -375,7 +366,7 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 49):
+#  recipe to execute (from 'Makefile', line 50):
 	rm -f build/$(PROJ_NAME).bin build/$(PROJ_NAME).elf
 
 # Not a target:
@@ -385,26 +376,19 @@ cmsis/src/startup_stm32f401ccux.s:
 #  File has been updated.
 #  Successfully updated.
 
-# Not a target:
-src/led.c:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-19 23:53:14.691135534
-#  File has been updated.
-#  Successfully updated.
-
 disass: interrupt.elf
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 46):
+#  recipe to execute (from 'Makefile', line 47):
 	$(GDB) $^ -batch -ex 'disass /r $(FUNC)'
 
 flash: interrupt.bin
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 36):
-	openocd -d2 -s $(OPENOCD_BASE)/scripts -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "program {build/$(PROJ_NAME).elf}  verify reset; shutdown;"
+#  recipe to execute (from 'Makefile', line 37):
+	openocd -d2 -s /home/rohit/.platformio/packages/tool-openocd/scripts -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "program {stm.elf}  verify reset; shutdown;"
 
 # Not a target:
 cmsis/src/system_stm32f4xx.c:
@@ -420,23 +404,23 @@ interrupt.bin: interrupt.elf
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/7=0%
-#  recipe to execute (from 'Makefile', line 55):
+#  recipe to execute (from 'Makefile', line 57):
 	$(OBJCOPY) -O binary build/$^ build/$@
 
 # files hash-table stats:
-# Load=17/1024=2%, Rehash=0, Collisions=6/42=14%
+# Load=15/1024=1%, Rehash=0, Collisions=6/38=16%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 37 / storage = 426 B / avg = 11 B
-# current buf: size = 8162 B / used = 426 B / count = 37 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 367 B / avg = 11 B
+# current buf: size = 8162 B / used = 367 B / count = 31 / avg = 11 B
 
-# strcache performance: lookups = 59 / hit rate = 37%
+# strcache performance: lookups = 53 / hit rate = 41%
 # hash-table stats:
-# Load=37/8192=0%, Rehash=0, Collisions=3/59=5%
-# Finished Make data base on Fri May 20 00:18:58 2022
+# Load=31/8192=0%, Rehash=0, Collisions=3/53=6%
+# Finished Make data base on Thu May 19 23:20:19 2022
 
  

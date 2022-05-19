@@ -1,0 +1,1 @@
+{"buildTargets":["02-interrupt.bin","02-interrupt.elf","all","clean","disass","erase","flash","flash-old","interrupt.bin","interrupt.elf"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

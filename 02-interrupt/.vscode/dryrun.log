@@ -1,6 +1,6 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/rohit/sunbeam/my-files/arm/classwork/day12/02-interrupt'
-~/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc -g -Wall -Tcmsis/src/STM32F401CCUX_FLASH.ld -mlittle-endian -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 --specs=nosys.specs -Iinc -Icmsis/inc -o build/interrupt.elf src/main.c src/led.c src/switch.c cmsis/src/syscalls.c cmsis/src/sysmem.c cmsis/src/system_stm32f4xx.c cmsis/src/startup_stm32f401ccux.s
+~/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc -g -Wall -Tcmsis/src/STM32F401CCUX_FLASH.ld -mlittle-endian -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -mfpu=fpv4-sp-d16 --specs=nosys.specs -Iinc -Icmsis/inc -o build/interrupt.elf src/main.c src/led.c src/switch.c cmsis/src/syscalls.c cmsis/src/sysmem.c cmsis/src/system_stm32f4xx.c cmsis/src/startup_stm32f401ccux.s
 ~/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-objcopy -O binary build/interrupt.elf build/interrupt.bin
 make: Leaving directory '/home/rohit/sunbeam/my-files/arm/classwork/day12/02-interrupt'
  

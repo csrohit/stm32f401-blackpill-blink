@@ -10,13 +10,13 @@
 int main(void)
 {
 	SwitchInit(SWITCH_PIN);
-	LedInit(LED_RED_PIN);
+	gpio_init(LED_PIN);
 	while(1) {
 		// wait until switch is pressed
 		while(SwitchGetState(SWITCH_PIN) == 0)
 			;
-		// blink led
-		LedBlink(LED_RED_PIN, 1000);
+		// blink
+		gpio_pulse(LED_PIN, 1000);
 	}
 	return 0;
 }

@@ -10,7 +10,16 @@
 
 #include "led.h"
 
-void LedInit(uint32_t pin) {
+/**
+ * @brief Initialise gpio pin as
+ * 	OUTPUT
+ * 	PUSH-PULL
+ * 	NO_PULLUP_PULLDOWN
+ * 	set LOW SPEED
+ * 
+ * @param pin 
+ */
+void gpio_init(uint32_t pin) {
 	// enable GPIO clock
 	RCC->AHB1ENR |= BV(AHB1ENR_LEDGPIO_EN);
 	// set GPIO mode as output
@@ -24,20 +33,35 @@ void LedInit(uint32_t pin) {
 	LED_GPIO->PUPDR &= ~(BV(pin * 2) | BV(pin * 2 + 1));
 }
 
-void LedOn(uint32_t pin) {
-	// make pin high
+/**
+ * @brief Set gpio pin
+ * 
+ * @param pin pin number
+ */
+void gpio_set(uint32_t pin) {
 	LED_GPIO->ODR |= BV(pin);
 }
 
-void LedOff(uint32_t pin) {
+/**
+ * @brief clear gpio pin
+ * 
+ * @param pin pin number
+ */
+void gpio_clear(uint32_t pin) {
 	// make pin low
 	LED_GPIO->ODR &= ~BV(pin);
 }
 
-void LedBlink(uint32_t pin, uint32_t ms) {
-	LedOn(pin);
+/**
+ * @brief Send high to low pulse to gpio
+ * 
+ * @param pin pin number
+ * @param ms high time in milliseconds
+ */
+void gpio_pulse(uint32_t pin, uint32_t ms) {
+	gpio_set(pin);
 	DelayMs(ms);
-	LedOff(pin);
+	gpio_clear(pin);
 }
 
 #endif /* LED_C_ */

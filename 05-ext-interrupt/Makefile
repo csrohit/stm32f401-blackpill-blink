@@ -7,12 +7,12 @@ PROJ_NAME = interrupt
 # Directory containing all CMSIS relevent source code
 CMSIS_DIR = cmsis
 
-OPENOCD_BASE = ~/.platformio/packages/tool-openocd
+OPENOCD_BASE = 
 
 LINKER_SCRIPT = cmsis/src/STM32F401CCUX_FLASH.ld
 
 ##### Toolchain #####
-TRIPLE  = 	~/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi
+TRIPLE  = 	arm-none-eabi
 CC 		=	${TRIPLE}-gcc
 LD 		= 	${TRIPLE}-ld
 AS 		= 	${TRIPLE}-as

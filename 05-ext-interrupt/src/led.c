@@ -59,9 +59,9 @@ void gpio_clear(uint32_t pin) {
  * @param ms high time in milliseconds
  */
 void gpio_pulse(uint32_t pin, uint32_t ms) {
-	gpio_set(pin);
-	DelayMs(ms);
 	gpio_clear(pin);
+	DelayMs(ms);
+	gpio_set(pin);
 }
 
 #endif /* LED_C_ */

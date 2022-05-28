@@ -64,7 +64,7 @@ startup.o: $(startup_script)
 
 
 flash: $(target).bin
-	@openocd -d2 -s $(openocd_base)/scripts -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "program {$(build_dir)/$(target).elf}  verify reset; shutdown;"
+	@openocd -d2 -s $(openocd_base)/scripts -f interface/stlink-v2.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "program {$(build_dir)/$(target).elf}  verify reset; shutdown;"
 
 
 

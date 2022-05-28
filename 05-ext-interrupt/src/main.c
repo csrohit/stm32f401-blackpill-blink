@@ -18,8 +18,8 @@ int main(void)
 		// if (flag == 1)
 		// {
 		// 	flag = 0;
-			gpio_pulse(LED_PIN, 1000);
-			DelayMs(500);
+			gpio_pulse(LED_PIN, 200);
+			DelayMs(200);
 
 		// }
 	}

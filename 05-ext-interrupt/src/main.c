@@ -9,18 +9,19 @@
 
 int main(void)
 {
-	switch_init(SWITCH_PIN);
+	// switch_init(SWITCH_PIN);
 	gpio_init(LED_PIN);
-	gpio_set(LED_PIN);
+	// gpio_set(LED_PIN);
 	while (1)
 	{
 		// wait until switch is pressed
-		if (flag == 1)
-		{
-			flag = 0;
+		// if (flag == 1)
+		// {
+		// 	flag = 0;
 			gpio_pulse(LED_PIN, 1000);
+			DelayMs(500);
 
-		}
+		// }
 	}
 	return 0;
 }
